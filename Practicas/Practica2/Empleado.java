@@ -1,10 +1,4 @@
-package com.practicas;
-
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
-/**
+package Practicas.Practica2;/**
  * Unit test for simple App.
  */
 public abstract class Empleado {

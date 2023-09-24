@@ -1,4 +1,4 @@
-package com.practicas;
+package Practicas.Practica2;
 
 public class EmpleadoPorHora extends Empleado{
     private int horasTrabajadas;
@@ -14,5 +14,5 @@ public class EmpleadoPorHora extends Empleado{
     @Override
     public double calcularSalario(){
         return horasTrabajadas * this.getSalario();
-    }    
+    }
 }

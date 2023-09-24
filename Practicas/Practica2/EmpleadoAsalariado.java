@@ -1,4 +1,4 @@
-package com.practicas;
+package Practicas.Practica2;
 
 public class EmpleadoAsalariado extends Empleado implements Bonificable {
     private int diasTrabajados;
