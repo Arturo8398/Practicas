@@ -1,6 +1,5 @@
 package Tareas.Herencia.Ejercicio2;
-
-public class Jugador extends Personaje {
+public class Jugador extends Personaje{
     private String clase;
 
     public Jugador(String nombre, int nivel, String clase) {
@@ -8,21 +7,15 @@ public class Jugador extends Personaje {
         this.clase = clase;
     }
 
-    public Jugador() {
+    //own method of this class
+    public void usarHabilidadEspecial(){
+        System.out.println("Kame Hame Ha >:(");
     }
-
-    // get and set methods of this class
+    //get and set methods of this class
     public String getClase() {
         return clase;
     }
-
     public void setClase(String clase) {
         this.clase = clase;
     }
-
-    @Override
-    public String toString() {
-        return "- Nombre " + nombre + "\n- Nivel " + nivel + "\n- Clase " + clase;
-    }
-
 }

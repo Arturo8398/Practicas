@@ -1,6 +1,6 @@
 package Tareas.Herencia.Ejercicio2;
 
-public class Enemigo extends Personaje {
+public class Enemigo extends Personaje{
     private String tipo;
 
     public Enemigo(String nombre, int nivel, String tipo) {
@@ -8,21 +8,17 @@ public class Enemigo extends Personaje {
         this.tipo = tipo;
     }
 
-    public Enemigo() {
+    //own method of this class
+    public void gritar(){
+        System.out.println("Ahhhhhhhh, vas a morir >:)");
     }
 
-    // get and set methods of this class
+    //get and set methods of this class
     public String getTipo() {
         return tipo;
     }
-
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    @Override
-    public String toString() {
-        return "- Nombre " + nombre + "\n- Nivel " + nivel + "\n- Tipo " + tipo;
     }
 
 }
