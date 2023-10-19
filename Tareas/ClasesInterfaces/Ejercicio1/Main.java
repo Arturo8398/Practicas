@@ -44,7 +44,7 @@ public class Main {
         }
         System.out.println("-----------------------------------------------------------------------------------------");
 
-        System.out.println("Calcular el perímetro de cada figura."); 
+        System.out.println("Calcular el perímetro de cada figura.");
         for (FiguraGeometrica figuraGeometrica : arregloFiguras) {
             try {
                 figuraGeometrica.calcularPerimetro();

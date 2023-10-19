@@ -14,6 +14,20 @@ public class Main {
         empleado1.sueldoNeto();
         empleado4.descuentos();
         empleado4.sueldoNeto();
+
+        Empleado[] planta = new Empleado[6];
+        planta[0] = empleado1;
+        planta[1] = empleado2;
+        planta[2] = empleado3;
+        planta[3] = empleado4;
+        planta[4] = empleado5;
+        planta[5] = empleado6;
+        double sueldoPlanta = 0;
+        for (Empleado empleado : planta) {
+            sueldoPlanta += empleado.sueldoNeto();
+        }
+
+        System.out.println("Planta: " + sueldoPlanta);
     }
 
 

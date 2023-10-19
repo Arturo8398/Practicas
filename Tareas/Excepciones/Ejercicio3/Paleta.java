@@ -90,7 +90,7 @@ public class Paleta {
         System.out.print("¿Cuántas paletas de agua quieres comprar?: ");
         cantidadAgua = entrada.nextInt();
 
-        if (cantidadAgua <= 0 || cantidadCrema<= 0) {
+        if (cantidadAgua <= 0 || cantidadCrema <= 0) {
             throw new RuntimeException();
         } else {
             System.out.println("El precio total es de: $"
