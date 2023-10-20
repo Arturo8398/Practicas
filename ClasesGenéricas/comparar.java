@@ -1,7 +1,7 @@
 package ClasesGenéricas;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class comparar{
@@ -14,7 +14,10 @@ public class comparar{
         numeros.add(4);
         numeros.add(1);
         numeros.add(3);
-        Collection.sort(numeros);
+        System.out.println("Lista de números sin ordenar");
+        mostrarLista(numeros);
+        Collections.sort(numeros);
+        System.out.println("Lista de números ordenada");
         mostrarLista(numeros);
 
         ArrayList<String> colores =  new ArrayList<String>();

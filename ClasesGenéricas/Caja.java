@@ -1,6 +1,6 @@
 package ClasesGenéricas;
 
-public class Caja<t>{
+public class Caja<T>{
     private T articulo;
 
     public Caja (){

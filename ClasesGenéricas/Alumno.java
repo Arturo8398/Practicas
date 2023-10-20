@@ -61,6 +61,4 @@ public class Alumno implements Comparable<Alumno>{
     public int compareTo(Alumno o) {
         return Integer.compare(this.noCuenta, o.noCuenta);
     }
-
-    
 }
