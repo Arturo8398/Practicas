@@ -25,8 +25,15 @@ public class comparar{
         colores.add("Azul");
         colores.add("Verde");
         colores.add("Verde");
-
         mostrarLista(colores);
+
+        ArrayList<Alumno> alumnos = new ArrayList<>();
+        alumnos.add(new Alumno(3333, "Luis", "Perez", 1.82, SituacionAcademica.REGULAR));
+        alumnos.add(new Alumno(1111, "Maria", "Gomez", 1.66, SituacionAcademica.REGULAR));
+        alumnos.add(new Alumno(4444, "Pepe", "Lopez", 1.78, SituacionAcademica.IRREGULAR));
+        alumnos.add(new Alumno(2222, "Ana", "Jerez", 1.69, SituacionAcademica.BAJA));
+        Collections.sort(alumnos);
+        mostrarLista(alumnos);
 
     }
 
@@ -35,4 +42,5 @@ public class comparar{
             System.out.println(o);
         }
     }
+    
 }

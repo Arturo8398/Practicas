@@ -50,15 +50,26 @@ public class Alumno implements Comparable<Alumno>{
         this.situacionAcademica = situacionAcademica;
     }
 
+    
+
+
+
     @Override
     public String toString() {
-        return "Alumno [noCuenta=" + noCuenta + ", nombre=" + nombre + "]";
+        return "Alumno [noCuenta=" + noCuenta + ", nombre=" + nombre + ", apellido=" + apellido + ", altura=" + altura
+                + ", situacionAcademica=" + situacionAcademica + "]";
     }
 
 
 
     @Override
     public int compareTo(Alumno o) {
-        return Integer.compare(this.noCuenta, o.noCuenta);
+        if (this.noCuenta < o.noCuenta) {
+            return -1;
+        } else if (this.noCuenta > o.noCuenta) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
