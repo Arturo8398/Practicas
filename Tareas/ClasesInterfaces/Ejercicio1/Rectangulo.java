@@ -21,19 +21,19 @@ public class Rectangulo extends FiguraGeometrica implements Figura{
     }
 
     @Override
-    public void calcularPerimetro() {
+    public double calcularPerimetro() {
         if (ladoMay < 1 || ladoMen < 1) {
             throw new RuntimeException();
         } else {
             perimetro = ladoMay * 2 + ladoMen * 2;
         }
-        System.out.println(perimetro);
+        return perimetro;
     }
 
     // method to display the data of an object of this child class
     @Override
     public void mostrarDatos() {
-        System.out.printf("%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Lado mayor:  " + this.ladoMay,
-                "Lado menor: " + this.ladoMen, "Área: " + formato.format(calcularArea()));
+        System.out.printf("%-25s%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Lado mayor:  " + this.ladoMay,
+                "Lado menor: " + this.ladoMen, "Área: " + formato.format(calcularArea()), "Perímetro: " + formato.format(calcularPerimetro()));
     }
 }

@@ -24,19 +24,19 @@ public class Triangulo extends FiguraGeometrica implements Figura{
     }
 
     @Override
-    public void calcularPerimetro() throws RuntimeException {
+    public double calcularPerimetro() throws RuntimeException {
         if (base < 1 || lado1 < 1 || lado2 < 1) {
             throw new RuntimeException();
         } else {
             perimetro = base + lado1 + lado2;
         }
-        System.out.println(perimetro);
+        return perimetro;
     }
 
     // method to display the data of an object of this child class
     @Override
     public void mostrarDatos() {
-        System.out.printf("%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Base: " + this.base,
-                "Altura: " + this.altura, "Área: " + formato.format(calcularArea()));
+        System.out.printf("%-25s%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Base: " + this.base,
+                "Altura: " + this.altura, "Área: " + formato.format(calcularArea()), "Perímetro: " + formato.format(calcularPerimetro()));
     }
 }
