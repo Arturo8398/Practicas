@@ -13,7 +13,7 @@ public class Enemigo extends Personaje {
     
 
     @Override
-    void usarHabilidadEspecial() {
+    public void usarHabilidadEspecial() {
         System.out.println("Kame Hame Ha >:(");
     }
     @Override

@@ -8,9 +8,6 @@ public class Main {
     static Scanner entrada = new Scanner(System.in);
 
     // Create instances of the Character class but of the child classes
-    static Jugador jugadorX = new Jugador();
-    static Enemigo enemigoX = new Enemigo();
-
     // Agregar personajes
 
     public static void main(String[] args) {
@@ -35,7 +32,7 @@ public class Main {
         if (nivel < 1) {
             throw new IllegalArgumentException();
         } else {
-            jugadorX = new Jugador(nombre, nivel, clase);
+            Jugador jugadorX = new Jugador(nombre, nivel, clase);
             System.out.println("\nPersonaje creado\n");
             System.out.println(jugadorX.toString());
         }
@@ -53,7 +50,8 @@ public class Main {
         if (nivel < 1) {
             throw new IllegalArgumentException();
         } else {
-            enemigoX = new Enemigo(nombre, nivel, tipo);
+
+            Enemigo enemigoX = new Enemigo(nombre, nivel, tipo);
             System.out.println("\nPersonaje creado\n");
             System.out.println(enemigoX.toString());
         }

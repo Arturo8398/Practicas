@@ -18,9 +18,13 @@ public class Jugador extends Personaje {
         throw new UnsupportedOperationException("Unimplemented method 'gritar'");
     }
     @Override
-    void usarHabilidadEspecial() {
+    public void usarHabilidadEspecial() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'usarHabilidadEspecial'");
+    }
+    @Override
+    public String toString() {
+        return "- Nombre " + jugador + "\n- Nivel " + nivel + "\n- Tipo " + tipo;
     }
     
 }

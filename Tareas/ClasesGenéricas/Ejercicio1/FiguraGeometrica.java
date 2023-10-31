@@ -1,6 +1,6 @@
 package Tareas.ClasesGenéricas.Ejercicio1;
 
-public abstract class FiguraGeometrica implements Figura{
+public abstract class FiguraGeometrica implements Figura {
     protected String nombre;
     protected double area;
     protected double perimetro;

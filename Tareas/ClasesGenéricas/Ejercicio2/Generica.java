@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Generica<T> {
     private T personaje;
-    ArrayList<Personaje> lista;
+    private ArrayList<Personaje> lista;
 
     public  Generica(T personaje){
         this.personaje = personaje;

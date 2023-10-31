@@ -2,15 +2,16 @@ package Tareas.ClasesGenéricas.Ejercicio1;
 
 import java.util.ArrayList;
 
-public class Generica<T>{
+public class Generica<T> {
     private T figura;
     public ArrayList<FiguraGeometrica> arrayFiguras;
 
-    public Generica(T figura){
-        this.figura = figura;;
+    public Generica(T figura) {
+        this.figura = figura;
+        ;
     }
 
-    public Generica(){
+    public Generica() {
         this.arrayFiguras = new ArrayList<FiguraGeometrica>();
     }
 
@@ -22,15 +23,15 @@ public class Generica<T>{
         this.figura = figura;
     }
 
-    public void anadirFigura(FiguraGeometrica figura){
+    public void anadirFigura(FiguraGeometrica figura) {
         arrayFiguras.add(figura);
     }
 
-    public ArrayList<FiguraGeometrica> arrayFiguras(){
+    public ArrayList<FiguraGeometrica> arrayFiguras() {
         return arrayFiguras;
     }
 
-    public void mostrarArreglo (){
+    public void mostrarArreglo() {
         for (FiguraGeometrica figuraGeometrica : arrayFiguras) {
             figuraGeometrica.mostrarDatos();
             System.out.println("");
