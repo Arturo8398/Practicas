@@ -1,6 +1,8 @@
 package Tareas.ColeccionesIteradores.Ejercicio1;
 
-public abstract class FiguraGeometrica implements Figura {
+import java.util.Comparator;
+
+public abstract class FiguraGeometrica implements Figura, Comparator<FiguraGeometrica>{
     protected String nombre;
     protected double area;
     protected double perimetro;
@@ -32,5 +34,10 @@ public abstract class FiguraGeometrica implements Figura {
 
     public void setArea(double area) {
         this.area = area;
+    }
+
+    @Override
+    public int compare(FiguraGeometrica o1, FiguraGeometrica o2) {
+        return o1.getNombre().compareTo(o2.getNombre());
     }
 }

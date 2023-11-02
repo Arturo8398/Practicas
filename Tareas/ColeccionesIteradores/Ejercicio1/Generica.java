@@ -1,8 +1,14 @@
 package Tareas.ColeccionesIteradores.Ejercicio1;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 
+/*
+The Iterable<> interface is implemented where the type is set.
+of data that is going to be iterated, which in this case is Geometric Figure, which is
+the parent class of the other classes
+ */
 public class Generica<T> implements Iterable<FiguraGeometrica>{
     private T figura;
     public ArrayList<FiguraGeometrica> arrayFiguras;
@@ -28,22 +34,29 @@ public class Generica<T> implements Iterable<FiguraGeometrica>{
         arrayFiguras.add(figura);
     }
 
+    public ArrayList<FiguraGeometrica> getArrayFiguras() {
+        //Ordenar la lista por el area
+        Collection.sort(arrayFiguras);
+        return arrayFiguras;
+    }
+
     public ArrayList<FiguraGeometrica> arrayFiguras() {
         return arrayFiguras;
     }
 
-    public void mostrarArreglo() {
-        for (FiguraGeometrica figuraGeometrica : arrayFiguras) {
-            figuraGeometrica.mostrarDatos();
-            System.out.println("");
-        }
-    }
-
+    /*
+    The iterator() method of the Iterable<> interface is implemented
+    which returns the iterator returned by the iterator() method of the ArrayList<> class
+     */
     @Override
     public Iterator iterator() {
         return new iterarFiguras();
     }
 
+    /*
+    An inner class is created that implements the Iterator<> interface and
+     override interface methods
+     */
     private class iterarFiguras implements Iterator<FiguraGeometrica>{
         private int posicion = 0;
         @Override

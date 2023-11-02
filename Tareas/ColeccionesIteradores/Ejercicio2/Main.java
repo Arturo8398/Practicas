@@ -61,6 +61,10 @@ public class Main {
     public static void eleccion() {
 
         // We can choose whether to be the enemy or the player
+        /*
+         * In this part I added an option to show the characters
+         * that have been created but now using an iterator
+         */
         System.out.println("¿A quién eliges?");
         System.out.println("1. Bills");
         System.out.println("2. Goku");
@@ -74,13 +78,13 @@ public class Main {
 
     public static void opcionesPersonaje(int opcion) {
         Generica<Personaje> personaje = new Generica<Personaje>();
-        personaje.agregarPersonaje(new Enemigo("Goku", 100, "Esqueleto")); //1
-        personaje.agregarPersonaje(new Enemigo("Vegeta", 99, "Orco")); //2
-        personaje.agregarPersonaje(new Enemigo("Vegeta", 99, "Orco")); //3
-        personaje.agregarPersonaje(new Enemigo("Picoro", 85, "Dragón")); //4
-        personaje.agregarPersonaje(new Jugador("Freezer", 76, "Guerrero")); //1
-        personaje.agregarPersonaje(new Jugador("Numero 17", 100, "Mago")); //2
-        personaje.agregarPersonaje(new Jugador("Bills", -1, "Guerrero")); //3
+        personaje.agregarPersonaje(new Enemigo("Goku", 100, "Esqueleto")); // 1
+        personaje.agregarPersonaje(new Enemigo("Vegeta", 99, "Orco")); // 2
+        personaje.agregarPersonaje(new Enemigo("Vegeta", 99, "Orco")); // 3
+        personaje.agregarPersonaje(new Enemigo("Picoro", 85, "Dragón")); // 4
+        personaje.agregarPersonaje(new Jugador("Freezer", 76, "Guerrero")); // 1
+        personaje.agregarPersonaje(new Jugador("Numero 17", 100, "Mago")); // 2
+        personaje.agregarPersonaje(new Jugador("Bills", -1, "Guerrero")); // 3
 
         switch (opcion) {
             case 1:
@@ -130,7 +134,14 @@ public class Main {
                 jugador2.usarHabilidadEspecial();
                 break;
             case 7:
+                /*
+                 * In this part I added an option to show the characters
+                 * that have been created but now using an iterator
+                 * with the methods of the Generica class that implements the Iterable interface
+                 * hasNext() and next() and the toString() method of the Character class
+                 */
                 Iterator<Personaje> i = personaje.iterator();
+                System.out.println("Mostrando lista de personajes usando un iterador en lugar de for each\n");
                 System.out.println("Personajes: \n");
                 while (i.hasNext()) {
                     System.out.println(i.next().toString());
