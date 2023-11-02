@@ -37,8 +37,5 @@ public class Grupo {
         public Alumno next() {
             return alumnos.get(posicion++);
         }
-
-
-
     }
 }
