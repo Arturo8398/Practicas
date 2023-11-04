@@ -9,6 +9,7 @@ public class Main {
         // Object of type GeometricFigure using the Circle class
         System.out.println("Hola, cambio de VSCode a Intellij");
         System.out.println("Pruebas con intellij");
+        System.out.println("Otra prueba :D");
         Generica<FiguraGeometrica> arregloFiguras = new Generica<FiguraGeometrica>();
 
         arregloFiguras.anadirFigura(new Circulo("Circulo 2", 23));
