@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Paradigmas De Programación I.iml" filepath="$PROJECT_DIR$/Paradigmas De Programación I.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practicas.iml" filepath="$PROJECT_DIR$/Practicas/Practicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practica3/a-g/a-g.iml" filepath="$PROJECT_DIR$/Practicas/Practica3/a-g/a-g.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practica3/g-i/g-i.iml" filepath="$PROJECT_DIR$/Practicas/Practica3/g-i/g-i.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practica3/j-l/j-l.iml" filepath="$PROJECT_DIR$/Practicas/Practica3/j-l/j-l.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practica3/m-o/m-o.iml" filepath="$PROJECT_DIR$/Practicas/Practica3/m-o/m-o.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practica3/p-r/p-r.iml" filepath="$PROJECT_DIR$/Practicas/Practica3/p-r/p-r.iml" />
+    </modules>
+  </component>
+</project>
