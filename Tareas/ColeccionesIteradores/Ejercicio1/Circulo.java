@@ -12,6 +12,10 @@ public class Circulo extends FiguraGeometrica implements Figura{
         this.radio = radio;
     }
 
+    public double getRadio() {
+        return radio;
+    }
+
     @Override
     // override superclass method calcularArea()
     public double calcularArea() {
@@ -34,5 +38,10 @@ public class Circulo extends FiguraGeometrica implements Figura{
     public void mostrarDatos() {
         System.out.printf("%-25s%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Radio: " + this.radio, "No aplica",
                 "Área: " + formato.format(calcularArea()), "Perímetro: " + formato.format(calcularPerimetro()));
+    }
+
+    @Override
+    public int compare(FiguraGeometrica o1, FiguraGeometrica o2) {
+        return o1.getNombre().compareTo(o2.getNombre());
     }
 }

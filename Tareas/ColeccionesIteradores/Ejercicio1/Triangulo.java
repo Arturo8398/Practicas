@@ -39,4 +39,9 @@ public class Triangulo extends FiguraGeometrica implements Figura{
         System.out.printf("%-25s%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Base: " + this.base,
                 "Altura: " + this.altura, "Área: " + formato.format(calcularArea()), "Perímetro: " + formato.format(calcularPerimetro()));
     }
+
+    @Override
+    public int compare(FiguraGeometrica o1, FiguraGeometrica o2) {
+        return o1.getNombre().compareTo(o2.getNombre());
+    }
 }

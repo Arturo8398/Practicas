@@ -34,12 +34,6 @@ public class Generica<T> implements Iterable<FiguraGeometrica>{
         arrayFiguras.add(figura);
     }
 
-    public ArrayList<FiguraGeometrica> getArrayFiguras() {
-        //Ordenar la lista por el area
-        Collection.sort(arrayFiguras);
-        return arrayFiguras;
-    }
-
     public ArrayList<FiguraGeometrica> arrayFiguras() {
         return arrayFiguras;
     }

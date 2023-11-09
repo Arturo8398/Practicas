@@ -1,15 +1,13 @@
 package Tareas.ColeccionesIteradores.Ejercicio1;
 
-import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         // We instantiate the GeometricFigure class but using the derived classes
 
         // Object of type GeometricFigure using the Circle class
-        System.out.println("Hola, cambio de VSCode a Intellij");
-        System.out.println("Pruebas con intellij");
-        System.out.println("Otra prueba :D");
         Generica<FiguraGeometrica> arregloFiguras = new Generica<FiguraGeometrica>();
 
         arregloFiguras.anadirFigura(new Circulo("Circulo 2", 23));
@@ -22,11 +20,33 @@ public class Main {
         arregloFiguras.anadirFigura(new Triangulo("Triangulo 3", 10.3, 14.6, 17.1, 15.2));
         arregloFiguras.anadirFigura(new Triangulo("Triangulo 4", 10.3, 4.6, 17.1, 19.2));
 
+        Circulo circulo1 = new Circulo("Evelin", 12.3);
+        Circulo circulo2 = new Circulo("Arturo", 2.3);
+        Circulo circulo3 = new Circulo("Berenice", 2.5);
+        Circulo circulo4 = new Circulo("Adriana", 4.6);
+
+        List<Circulo> listaejemplo = new ArrayList<>();
+
+        listaejemplo.add(circulo1);
+        listaejemplo.add(circulo2);
+        listaejemplo.add(circulo3);
+        listaejemplo.add(circulo4);
+
+        //Collections.sort(listaejemplo, new Comparador());
+
+        for (FiguraGeometrica figura: listaejemplo) {
+            figura.mostrarDatos();
+            System.out.println("");
+        }
+
+
+
+
         /*
          * Se crea un objeto de la interfaz Iterator<FiguraGeometrica>
          * donde se le asigna el iterador que retorna el método iterator() de la clase
          * Generica<>
-         */
+
         Iterator<FiguraGeometrica> iterador = arregloFiguras.iterator();
         System.out.println(
                 "-----------------------------------------------------------------------------------------------------------------------");
@@ -41,7 +61,7 @@ public class Main {
          * Iterator<> interface
          * The data is displayed with the showData() method of the FiguraGeometrica
          * class
-         */
+
         while (iterador.hasNext()) {
             FiguraGeometrica figura = iterador.next();
             figura.mostrarDatos();

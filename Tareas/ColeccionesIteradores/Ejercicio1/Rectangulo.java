@@ -36,4 +36,9 @@ public class Rectangulo extends FiguraGeometrica implements Figura{
         System.out.printf("%-25s%-25s%-25s%-25s%-25s", "Nombre: " + this.nombre, "Lado mayor:  " + this.ladoMay,
                 "Lado menor: " + this.ladoMen, "Área: " + formato.format(calcularArea()), "Perímetro: " + formato.format(calcularPerimetro()));
     }
+
+    @Override
+    public int compare(FiguraGeometrica o1, FiguraGeometrica o2) {
+        return o1.getNombre().compareTo(o2.getNombre());
+    }
 }
